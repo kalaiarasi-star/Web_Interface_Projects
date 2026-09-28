@@ -1,0 +1,163 @@
+/* Main container */
+.attendance-container {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Main card */
+.attendance-card {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+.attendance-card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1f2937;
+  font-size: 28px;
+}
+
+/* Summary section */
+.summary {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* Summary boxes */
+.summary-box {
+  width: 180px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+}
+
+.summary-box p {
+  margin: 5px 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.summary-box strong {
+  font-size: 25px;
+  color: #1f2937;
+}
+
+/* Student list */
+.student-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Student row */
+.student-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 18px;
+  margin-bottom: 10px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+
+/* Hover effect */
+.student-item:hover {
+  background: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Student name */
+.student-name {
+  color: #334155;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Status */
+.status {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* Present status */
+.present {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+/* Absent status */
+.absent {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+/* Toggle button */
+.toggle-button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* Button hover */
+.toggle-button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* Button click */
+.toggle-button:active {
+  transform: scale(0.97);
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .attendance-container {
+    padding: 20px;
+  }
+
+  .attendance-card {
+    padding: 20px;
+  }
+
+  .summary {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .summary-box {
+    width: 100%;
+  }
+
+  .student-item {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .toggle-button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,624 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+  color: #172033;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  background: linear-gradient(
+    135deg,
+    #172554,
+    #1e3a8a,
+    #2563eb
+  );
+
+  color: white;
+
+  padding: 30px 7%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+}
+
+.header p {
+  margin: 0;
+  opacity: 0.85;
+}
+
+.header-badge {
+  border: 1px solid rgba(255,255,255,0.5);
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+  width: 90%;
+  max-width: 1250px;
+  margin: 30px auto;
+}
+
+
+/* =========================
+   PROFILE
+========================= */
+
+.profile-card {
+  background: white;
+  border-radius: 18px;
+  padding: 28px;
+
+  display: flex;
+  gap: 30px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.07);
+}
+
+.student-photo {
+  width: 150px;
+  height: 150px;
+
+  object-fit: cover;
+
+  border-radius: 18px;
+
+  border: 5px solid #e8efff;
+}
+
+.student-info {
+  flex: 1;
+}
+
+.student-info h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.department {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 12px;
+}
+
+.profile-grid p {
+  margin: 0;
+  padding: 12px;
+  background: #f8fafc;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+
+/* =========================
+   SUMMARY
+========================= */
+
+.summary-container {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 18px;
+
+  margin: 25px 0;
+}
+
+.summary-card {
+  background: white;
+  padding: 22px;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 8px 25px rgba(0,0,0,0.06);
+}
+
+.summary-card span {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.summary-card h2 {
+  font-size: 32px;
+  margin: 8px 0;
+  color: #1d4ed8;
+}
+
+.summary-card small {
+  color: #94a3b8;
+}
+
+
+/* =========================
+   CHART
+========================= */
+
+.chart-card {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 18px;
+
+  margin-bottom: 25px;
+
+  box-shadow:
+    0 8px 25px rgba(0,0,0,0.06);
+}
+
+.chart-card h2 {
+  margin-top: 0;
+}
+
+.chart {
+  height: 230px;
+
+  display: flex;
+
+  align-items: end;
+
+  justify-content: space-around;
+
+  border-bottom: 2px solid #cbd5e1;
+
+  padding: 20px;
+}
+
+.bar-container {
+  height: 190px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: end;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+.bar {
+  width: 42px;
+
+  min-height: 10px;
+
+  background: #2563eb;
+
+  border-radius:
+    8px 8px 0 0;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: start;
+
+  color: white;
+
+  font-size: 11px;
+
+  padding-top: 5px;
+
+  transition: 0.3s;
+}
+
+.bar:hover {
+  background: #1d4ed8;
+  transform: translateY(-5px);
+}
+
+.bar-container label {
+  font-weight: bold;
+  color: #475569;
+}
+
+
+/* =========================
+   REPORT SECTION
+========================= */
+
+.report-section {
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 28px;
+
+  box-shadow:
+    0 8px 25px rgba(0,0,0,0.06);
+}
+
+.section-heading {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.section-heading h2 {
+  margin: 0;
+}
+
+.section-heading p {
+  color: #64748b;
+}
+
+.current-gpa {
+  text-align: center;
+
+  background: #eff6ff;
+
+  padding: 15px 25px;
+
+  border-radius: 12px;
+}
+
+.current-gpa span {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.current-gpa strong {
+  font-size: 30px;
+  color: #2563eb;
+}
+
+
+/* =========================
+   SEMESTER BUTTONS
+========================= */
+
+.semester-selector {
+  display: flex;
+
+  gap: 10px;
+
+  flex-wrap: wrap;
+
+  margin: 25px 0;
+}
+
+.semester-btn {
+  border: none;
+
+  background: #e2e8f0;
+
+  color: #334155;
+
+  padding: 12px 18px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+  transition: 0.2s;
+}
+
+.semester-btn:hover {
+  background: #cbd5e1;
+}
+
+.semester-btn.active {
+  background: #2563eb;
+  color: white;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 750px;
+}
+
+thead {
+  background: #172554;
+  color: white;
+}
+
+th,
+td {
+  padding: 15px;
+
+  text-align: left;
+
+  border-bottom:
+    1px solid #e2e8f0;
+}
+
+tbody tr:hover {
+  background: #f8fafc;
+}
+
+
+/* =========================
+   GRADES
+========================= */
+
+.grade {
+  display: inline-block;
+
+  min-width: 40px;
+
+  text-align: center;
+
+  padding: 6px 10px;
+
+  border-radius: 8px;
+
+  font-weight: bold;
+
+  background: #dbeafe;
+
+  color: #1d4ed8;
+}
+
+
+/* =========================
+   SEMESTER SUMMARY
+========================= */
+
+.semester-summary {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  margin-top: 25px;
+
+  background: #f8fafc;
+
+  border-radius: 14px;
+
+  padding: 20px;
+}
+
+.semester-summary div {
+  text-align: center;
+
+  border-right:
+    1px solid #e2e8f0;
+}
+
+.semester-summary div:last-child {
+  border-right: none;
+}
+
+.semester-summary span {
+  display: block;
+
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+.semester-summary strong {
+  display: block;
+
+  font-size: 24px;
+
+  margin-top: 5px;
+}
+
+.pass {
+  color: #16a34a;
+}
+
+.fail {
+  color: #dc2626;
+}
+
+
+/* =========================
+   FINAL RESULT
+========================= */
+
+.final-result {
+  margin-top: 25px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0f172a,
+      #1e3a8a
+    );
+
+  color: white;
+
+  border-radius: 18px;
+
+  padding: 30px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.final-result h2 {
+  margin-top: 0;
+}
+
+.final-result p {
+  color: #cbd5e1;
+}
+
+.final-cgpa {
+  text-align: center;
+}
+
+.final-cgpa span {
+  display: block;
+
+  font-size: 12px;
+
+  letter-spacing: 2px;
+}
+
+.final-cgpa strong {
+  display: block;
+
+  font-size: 55px;
+
+  margin: 5px 0;
+}
+
+.final-cgpa small {
+  color: #cbd5e1;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  padding: 30px;
+
+  text-align: center;
+
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+
+/* =========================
+   LOADING / ERROR
+========================= */
+
+.loading,
+.error {
+  min-height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 22px;
+}
+
+.error {
+  color: #dc2626;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .summary-container {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .profile-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  .header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+  .profile-card {
+    flex-direction: column;
+  }
+
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-container {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .semester-summary {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 20px;
+  }
+
+  .semester-summary div {
+    border-right: none;
+  }
+
+  .final-result {
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 25px;
+  }
+
+}

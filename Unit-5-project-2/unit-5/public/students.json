@@ -1,0 +1,103 @@
+{
+  "student": {
+    "name": "Kalaiarasi S",
+    "registerNo": "24AD101",
+    "department": "B.Tech Artificial Intelligence & Data Science",
+    "year": "2nd Year",
+    "batch": "2025 - 2029",
+    "college": "ABC College of Engineering",
+    "email": "kalaiarasi123@gmail.com",
+    "phone": "+91 9876543210",
+    "attendance": 85,
+    "photo": "kalai.jpeg"
+  },
+
+  "semesters": [
+    {
+      "semester": 1,
+      "subjects": [
+        { "code": "MA101", "name": "Mathematics I", "credits": 4, "grade": "A+" },
+        { "code": "PH101", "name": "Engineering Physics", "credits": 3, "grade": "A" },
+        { "code": "CS101", "name": "Programming in C", "credits": 4, "grade": "O" },
+        { "code": "EN101", "name": "English", "credits": 3, "grade": "A+" },
+        { "code": "EC101", "name": "Basic Electronics", "credits": 3, "grade": "A" }
+      ]
+    },
+
+    {
+      "semester": 2,
+      "subjects": [
+        { "code": "MA102", "name": "Mathematics II", "credits": 4, "grade": "A" },
+        { "code": "CS102", "name": "Data Structures", "credits": 4, "grade": "O" },
+        { "code": "DS101", "name": "Python Programming", "credits": 4, "grade": "A+" },
+        { "code": "PH102", "name": "Engineering Chemistry", "credits": 3, "grade": "A" },
+        { "code": "HS102", "name": "Professional English", "credits": 3, "grade": "A+" }
+      ]
+    },
+
+    {
+      "semester": 3,
+      "subjects": [
+        { "code": "AD201", "name": "Artificial Intelligence", "credits": 4, "grade": "O" },
+        { "code": "AD202", "name": "Database Management Systems", "credits": 4, "grade": "A+" },
+        { "code": "CS203", "name": "Java Programming", "credits": 4, "grade": "A" },
+        { "code": "MA203", "name": "Discrete Mathematics", "credits": 3, "grade": "A+" },
+        { "code": "DS203", "name": "Statistics", "credits": 3, "grade": "A" }
+      ]
+    },
+
+    {
+      "semester": 4,
+      "subjects": [
+        { "code": "AD204", "name": "Machine Learning", "credits": 4, "grade": "A+" },
+        { "code": "AD205", "name": "Web Development", "credits": 4, "grade": "O" },
+        { "code": "CS206", "name": "Operating Systems", "credits": 4, "grade": "A" },
+        { "code": "AD207", "name": "Data Visualization", "credits": 3, "grade": "A+" },
+        { "code": "HS204", "name": "Environmental Science", "credits": 2, "grade": "O" }
+      ]
+    },
+
+    {
+      "semester": 5,
+      "subjects": [
+        { "code": "AD301", "name": "Deep Learning", "credits": 4, "grade": "A+" },
+        { "code": "AD302", "name": "Natural Language Processing", "credits": 4, "grade": "A" },
+        { "code": "AD303", "name": "Computer Vision", "credits": 4, "grade": "O" },
+        { "code": "CS304", "name": "Cloud Computing", "credits": 3, "grade": "A+" },
+        { "code": "AD305", "name": "Mini Project", "credits": 3, "grade": "O" }
+      ]
+    },
+
+    {
+      "semester": 6,
+      "subjects": [
+        { "code": "AD306", "name": "Big Data Analytics", "credits": 4, "grade": "A" },
+        { "code": "AD307", "name": "Reinforcement Learning", "credits": 4, "grade": "A+" },
+        { "code": "CS308", "name": "Cyber Security", "credits": 3, "grade": "A" },
+        { "code": "AD309", "name": "AI Ethics", "credits": 3, "grade": "O" },
+        { "code": "AD310", "name": "Major Project I", "credits": 4, "grade": "A+" }
+      ]
+    },
+
+    {
+      "semester": 7,
+      "subjects": [
+        { "code": "AD401", "name": "Advanced AI", "credits": 4, "grade": "O" },
+        { "code": "AD402", "name": "Generative AI", "credits": 4, "grade": "A+" },
+        { "code": "AD403", "name": "AI Research", "credits": 4, "grade": "A+" },
+        { "code": "AD404", "name": "Cloud AI", "credits": 3, "grade": "A" },
+        { "code": "AD405", "name": "Major Project II", "credits": 4, "grade": "O" }
+      ]
+    },
+
+    {
+      "semester": 8,
+      "subjects": [
+        { "code": "AD406", "name": "Industry Internship", "credits": 4, "grade": "O" },
+        { "code": "AD407", "name": "Final Year Project", "credits": 8, "grade": "O" },
+        { "code": "AD408", "name": "Technical Seminar", "credits": 3, "grade": "A+" },
+        { "code": "AD409", "name": "Professional Skills", "credits": 3, "grade": "A+" }
+      ]
+    }
+  ]
+}
